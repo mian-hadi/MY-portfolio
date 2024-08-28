@@ -79,7 +79,7 @@ body{
     color: var(--text-color);
     display: none;
     position: absolute;
-    margin-left: 99%;
+    margin-left: 90%;
 }
 section{
     min-height: 100vh;
@@ -472,7 +472,21 @@ span{
 .home-img img{
     /* width: 70vw; */
     margin-top: 4rem;
+    animation: floatImage 4s ease-in-out infinite;
 }
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 @media (max-width: 450px) {
     .html{
         font-size: 50%;
